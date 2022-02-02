@@ -30,19 +30,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         /* Pass information on how to access the file */
         content: {
             /* Location of file where it is hosted */
-            location: {
-                url: "https://github.com/imreburn/imreburn.github.io/blob/c14eb6384160924a04074810aa502ffddc7c1773/JinhongChoi_CV.pdf",
-                /*
-                If the file URL requires some additional headers, then it can be passed as follows:-
-                headers: [
-                    {
-                        key: "<HEADER_KEY>",
-                        value: "<HEADER_VALUE>",
-                    }
-                ]
-                */
-            },
-        },
+            location: {url: "https://github.com/imreburn/imreburn.github.io/blob/c14eb6384160924a04074810aa502ffddc7c1773/JinhongChoi_CV.pdf"}},
         /* Pass meta data of file */
         metaData: {
             /* file name */
