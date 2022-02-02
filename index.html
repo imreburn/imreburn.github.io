@@ -1,18 +1,14 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <div id="adobe-dc-view" style="height: 360px; width: 100%;"></div>
-    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-    <script type="text/javascript">
-      document.addEventListener("adobe_dc_view_sdk.ready", function(){
-      var adobeDCView = new AdobeDC.View({clientId: "8c19543ed0794251ac730be9176a6084", divId: "adobe-dc-view"});
-      adobeDCView.previewFile({
-        content:{ location:
-        { url: "https://github.com/imreburn/imreburn.github.io/blob/7b3d04604c2920040a2ab849546cdfa61e2c175f/JinhongChoi_CV.pdf"}}}
-        },
-        {
-          embedMode: "SIZED_CONTAINER"
-        });
-      });
-    </script>
-  </body>
+<head>
+    <title>Jinhong Choi</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body style="margin: 0px">
+    <div id="adobe-dc-view"></div>
+    <script type="text/javascript" src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+</body>
 </html>
