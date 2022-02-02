@@ -31,7 +31,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "https://github.com/imreburn/imreburn.github.io/blob/70c30c209a402acd30144b6f7e66e07149e61237/JinhongChoi_CV.pdf",
+                url: "https://imreburn.github.io/JinhongChoi_CV.pdf",
                 /*
                 If the file URL requires some additional headers, then it can be passed as follows:-
                 headers: [
