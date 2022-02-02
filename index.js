@@ -31,7 +31,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "https://imreburn.github.io/JinhongChoi_CV.pdf",
+                url: "https://www.dropbox.com/s/ejt3q35o1hbffwj/JinhongChoi_CV.pdf?dl=0",
                 /*
                 If the file URL requires some additional headers, then it can be passed as follows:-
                 headers: [
