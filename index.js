@@ -30,7 +30,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         /* Pass information on how to access the file */
         content: {
             /* Location of file where it is hosted */
-            location: {url: "https://www.dropbox.com/s/ejt3q35o1hbffwj/JinhongChoi_CV.pdf?dl=0"}},
+            location: url: "https://www.dropbox.com/s/ejt3q35o1hbffwj/JinhongChoi_CV.pdf?dl=0"},
         /* Pass meta data of file */
         metaData: {
             /* file name */
