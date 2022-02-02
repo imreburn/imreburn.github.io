@@ -20,7 +20,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
     /* Initialize the AdobeDC View object */
     var adobeDCView = new AdobeDC.View({
         /* Pass your registered client id */
-        clientId: "9750b1770f3e4db0aeb721a55116b4d1",
+        clientId: "d8cf2e7bc5ef46eeadaf0aee3f1b3566",
         /* Pass the div id in which PDF should be rendered */
         divId: "adobe-dc-view",
     });
@@ -31,7 +31,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "JinhongChoi_CV.pdf",
+                url: "https://www.dropbox.com/s/ejt3q35o1hbffwj/JinhongChoi_CV.pdf?dl=0",
                 /*
                 If the file URL requires some additional headers, then it can be passed as follows:-
                 headers: [
