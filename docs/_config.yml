@@ -41,8 +41,6 @@ minima:
     twitter: jinhongchoi_
     github: imreburn
     linkedin: jinhongchoi-osu
-  
-  google_analytics: G-JXC4TV87WT
 
 plugins:
   - jekyll-feed
