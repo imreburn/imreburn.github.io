@@ -36,8 +36,7 @@ baseurl: ""      # place folder name if the site is served in a subfolder
 # Build settings
 theme: minima
 minima:
-  skin: auto
-
+  skin: dark
   social_links:
     twitter: jinhongchoi_
     github: imreburn
