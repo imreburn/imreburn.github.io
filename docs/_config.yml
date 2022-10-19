@@ -30,11 +30,21 @@ baseurl: ""      # place folder name if the site is served in a subfolder
 
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# twitter_username: jekyllrb
+# github_username:  jekyll
 
 # Build settings
 theme: minima
+minima:
+  skin: auto
+
+  social_links:
+    twitter: jinhongchoi_
+    github: imreburn
+    linkedin: jinhongchoi-osu
+  
+  google_analytics: G-JXC4TV87WT
+
 plugins:
   - jekyll-feed
 
