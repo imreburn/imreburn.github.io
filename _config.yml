@@ -35,12 +35,12 @@ baseurl: ""      # place folder name if the site is served in a subfolder
 
 # Build settings
 theme: minima
-# minima:
-#   skin: dark
-#   social_links:
-#     twitter: jinhongchoi_
-#     github: imreburn
-#     linkedin: jinhongchoi-osu
+minima:
+  skin: dark
+  social_links:
+    twitter: jinhongchoi_
+    github: imreburn
+    linkedin: jinhongchoi-osu
 
 plugins:
   - jekyll-feed
