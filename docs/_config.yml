@@ -24,21 +24,28 @@ description: >- # this means to ignore newlines until "baseurl:"
   Jinhong's personal blog for studying codes, programming and algorithms
 # baseurl:  # the subpath of your site, e.g. /blog
 url: "https://imreburn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
-# github_username:  jekyll
+twitter_username: jinhongchoi_
+github_username:  imreburn
 
 # Build settings
 remote_theme: jekyll/minima
+
 minima:
-  skin: solarized-light
-  # skin: dark
-  social_links:
-    github: imreburn
-    linkedin: jinhongchoi-osu
+  # skin: solarized-light
+  skin: dark
+  # social_links:
+  #   github: imreburn
+  #   linkedin: jinhongchoi-osu
+
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
+header_pages:
+  - about.markdown
+  - plan.md
+  
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
