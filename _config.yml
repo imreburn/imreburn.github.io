@@ -36,7 +36,7 @@ url: "https://imreburn.github.io"  # the base hostname and protocol for your sit
 # Build settings
 remote_theme: jekyll/minima
 minima:
-  skin: dark
+  skin: solarized-light
   social_links:
     twitter: jinhongchoi_
     github: imreburn
