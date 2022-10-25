@@ -4,9 +4,10 @@ title: Plan
 permalink: https://imreburn.github.io/docs/plan
 ---
 
-## Website development
+## Blog development
 
 - domain (done)
+- support math equation 
 - attach tracker
 - move to aws?
 

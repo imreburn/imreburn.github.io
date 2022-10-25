@@ -31,11 +31,15 @@ github_username:  imreburn
 remote_theme: jekyll/minima
 
 minima:
-  # skin: solarized-light
-  skin: dark
+  skin: solarized-light
+  # skin: dark
   # social_links:
   #   github: imreburn
   #   linkedin: jinhongchoi-osu
+
+markdown: kramdown
+kramdown:
+  math_engine: katex
 
 plugins:
   - jekyll-feed
