@@ -28,15 +28,10 @@ twitter_username: jinhongchoi_
 github_username:  imreburn
 
 # Build settings
-# remote_theme: jekyll/minima
-remote_theme: ankitsultana/researcher@gem
+remote_theme: jekyll/minima
 
-# minima:
-#   skin: solarized-light
-  # skin: dark
-  # social_links:
-  #   github: imreburn
-  #   linkedin: jinhongchoi-osu
+minima:
+  skin: auto
 
 markdown: kramdown
 kramdown:
