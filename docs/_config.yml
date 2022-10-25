@@ -46,9 +46,9 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
 
-# header_pages:
-#   - about.markdown
-#   - plan.md
+header_pages:
+  # - about.markdown
+  - plan.md
   
 # Exclude from processing.
 # The following items will not be processed, by default.
