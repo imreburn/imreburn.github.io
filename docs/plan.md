@@ -6,12 +6,12 @@ permalink: https://imreburn.github.io/docs/plan
 
 ## Blog development
 
-[x] attach gTLD domain 
-[x] support math equation 
-[ ] add tag
-[ ] add last edited
-[ ] attach tracker
-[ ] move to aws?
+- [x] attach gTLD domain 
+- [x] support math equation 
+- [ ] add tag
+- [ ] add last edited
+- [ ] attach tracker
+- [ ] move to aws?
 
 ## Plan
 
@@ -28,5 +28,6 @@ permalink: https://imreburn.github.io/docs/plan
 - LeetCode
 
 ### Job Searching
-[ ] Rewrite CV: resumé style
-[ ] Review LinkedIn profile
+
+- [ ] Rewrite CV: resumé style
+- [ ] Review LinkedIn profile
