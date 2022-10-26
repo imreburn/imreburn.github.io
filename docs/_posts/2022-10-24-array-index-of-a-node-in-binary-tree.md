@@ -34,9 +34,9 @@ $$j - 1$$ nodes before the node $$n$$ will have $$2(j - 1)$$ children at $$(k+1)
 
 Then `I(n.left)` 
 
-$$=$$ # of nodes before `n.left`
+$$=$$ (# of nodes before `n.left`)
 
-$$=$$ # of nodes until $$k$$-th level $$+$$ # of nodes at $$(k+1)$$-th level before `n.left`
+$$=$$ (# of nodes until $$k$$-th level) $$+$$ (# of nodes at $$(k+1)$$-th level before `n.left`)
 
 $$= 2^{k+1} - 1 + 2(j - 1)$$ &nbsp;
 
