@@ -32,7 +32,7 @@ That is, $$i = 2^k + j - 2$$.
 
 $$j - 1$$ nodes before the node $$n$$ will have $$2(j - 1)$$ children at $$(k+1)$$-th level.
 
-Thus, `I(n.left)` would be
+Then `I(n.left)` 
 \begin{align*}
 $$&=$$ # of nodes before `n.left`
 $$&=$$ # of nodes until $$k$$-th level $$+$$ # of nodes at $$(k+1)$$-th level before `n.left`
