@@ -46,7 +46,7 @@ $$= 2^{k+1} + 2j - 3$$ <p> &#8205;</p>
 $$= 2i + 1$$ <p> &#8205;</p>
 
 
-Similarly, `I(n.parent) = (i - 1) // 2`, where `//` is the floor division operator in Python.
+Similarly, `I(n.parent) = (i - 1)//2`, where `//` is the floor division operator in Python.
 
 
 
