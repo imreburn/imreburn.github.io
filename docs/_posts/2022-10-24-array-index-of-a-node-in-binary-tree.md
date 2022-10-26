@@ -36,12 +36,15 @@ Then `I(n.left)`
 
 $$=$$ # of nodes before `n.left`
 
-$$=$$ # of nodes until $$k$$-th level $$+$$ # of nodes at $$(k+1)$$-th level before `n.left`
+$$=$$ # of nodes until $$k$$-th level 
 
-$$= 2^{k+1} - 1 + 2(j - 1)$$
+$$+$$ # of nodes at $$(k+1)$$-th level before `n.left`
 
-$$= 2^{k+1} + 2j - 3$$
-$$= 2i + 1$$
+$$= 2^{k+1} - 1 + 2(j - 1)$$ <p>&#8205;</p>
+
+$$= 2^{k+1} + 2j - 3$$ <p>&#8205;</p>
+
+$$= 2i + 1$$ <p>&#8205;</p>
 
 
 Similarly, `I(n.parent) = (i - 1) // 2`, where `//` is the floor division operator in Python.

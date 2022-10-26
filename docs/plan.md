@@ -13,7 +13,7 @@ permalink: https://imreburn.github.io/docs/plan
 - [ ] attach tracker
 - [ ] move to aws?
 
-## Plan
+## Study
 
 ### Read
 
