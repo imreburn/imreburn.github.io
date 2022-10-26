@@ -14,9 +14,10 @@ But I want the proof!
 
 #### Prove ####
 When a complete or full binary tree $$T$$ is represented by an array and
-a node `n` has the index $$i$$ (`I(n) = i`), 
+a node `n` has the index $$i$$, 
 then the index of the left and the right child node is $$2i + 1$$ and $$2i + 2$$, respectively.
-(`I(n.left) = 2i + 1`, `I(n.left) = 2i + 1`)
+
+In other worlds, if `I(n) = i`, then `I(n.left) = 2i + 1`, `I(n.right) = 2i + 2`)
 
 
 #### Proof ####
@@ -29,18 +30,17 @@ $$S = 2^0 + 2^1 + \dots + 2^{k-1} = 2^k - 1$$
 
 That is, $$i = 2^k + j - 2$$.
 
-$$j - 1$$ nodes before the node $$n$$ have $$2(j - 1)$$ children at $$(k+1)$$-th level.
+$$j - 1$$ nodes before the node $$n$$ will have $$2(j - 1)$$ children at $$(k+1)$$-th level.
 
 Thus, `I(n.left)` would be
 
-$$=$$ # of nodes before $$n.left$$
-
+$$=$$ # of nodes before `n.left`
 $$=$$ # of nodes until $$k$$-th level $$+$$ # of nodes at $$(k+1)$$-th level before `n.left`
+$$= 2^{k+1} - 1 + 2(j - 1)$$
+$$= 2^{k+1} + 2j - 3$$
+$$= 2i + 1$$
 
-$$= 2^{k+1} - 1 + 2(j - 1) = 2^{k+1} + 2j - 3 = 2i + 1$$
-
-
-Similarly, `I(n.parent) = (i - 1) // 2` in Python.
+Similarly, `I(n.parent) = (i - 1) // 2`, where `\\` is the floor division operator in Python.
 
 
 
