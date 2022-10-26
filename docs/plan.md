@@ -4,7 +4,7 @@ title: Plan
 permalink: https://imreburn.github.io/docs/plan
 ---
 
-## Blog development
+### Blog development
 
 - [x] attach gTLD domain 
 - [x] support math equation 
@@ -13,7 +13,6 @@ permalink: https://imreburn.github.io/docs/plan
 - [ ] attach tracker
 - [ ] move to aws?
 
-## Study
 
 ### Read
 
@@ -22,10 +21,12 @@ permalink: https://imreburn.github.io/docs/plan
   - [Google Style Guides](https://google.github.io/styleguide/)
   - [PEP8](https://peps.python.org/pep-0008/)
 
+
 ### Coding
 
 - Solve CS514 HWs in different languages (C/C++, Rust?)
 - LeetCode
+
 
 ### Job Searching
 
