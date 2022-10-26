@@ -38,7 +38,7 @@ $$=$$ # of nodes before `n.left`
 
 $$=$$ # of nodes until $$k$$-th level $$+$$
       
-&nbsp;&nbsp;&nbsp;&nbsp;\# of nodes at $$(k+1)$$-th level before `n.left`
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\# of nodes at $$(k+1)$$-th level before `n.left`
 
 $$= 2^{k+1} - 1 + 2(j - 1)$$ &nbsp;
 
