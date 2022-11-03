@@ -8,6 +8,7 @@ permalink: https://imreburn.github.io/docs/plan
 
 - [x] attach gTLD domain 
 - [x] support math equation 
+- [ ] profile
 - [ ] add tag
 - [ ] add last edited
 - [ ] attach tracker
@@ -25,7 +26,20 @@ permalink: https://imreburn.github.io/docs/plan
 ### Coding
 
 - Solve CS514 HWs in different languages (C/C++, Rust?)
-- LeetCode
+- [ ] DP with bottom-up
+- [ ] get median with O(n)
+- Algorithms
+  - [ ] bubble, insertion, selection, quick, merge, radix, heap
+  - [ ] heap: bubble up and bubble down
+  - [ ] KMP O(n+m)
+  - [ ] Tree traversal
+  - [ ] make b-BST: AVL, RB
+- Measure performance
+  - [ ] perf
+  - [ ] how to fix CPU clock
+- Test
+  - [ ] generate testcases: gtest, j-unit test
+  - [ ] Integration: Travis CI, Confluence
 
 
 ### Job Searching
