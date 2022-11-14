@@ -4,7 +4,7 @@ title: Tip of the Day - Walrus operator (Python)
 katex: false
 ---
 
-`:=`, assignment expression operator, also known as the walrus operator, is supported by Python 3.8 and above. Unlike an assignment *statement*, assignment *expression* returns the value as well as does assignment. 
+`:=`, assignment expression operator, also known as the walrus operator, is supported by Python 3.8 and above. Unlike an assignment *statement*, assignment *expression* returns the value as well as assigns. 
 It can improve both performance and readability when using it properly.
 
 ```python
