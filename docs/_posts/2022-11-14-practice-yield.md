@@ -58,3 +58,6 @@ def _order(n, edges):
 
 order = lambda n, edges: topo if len(topo := list(_order(n, edges))) == n else None # detect cycle
 ```
+
+### Reference
+- [How to Use Generators and yield in Python](https://realpython.com/introduction-to-python-generators/)

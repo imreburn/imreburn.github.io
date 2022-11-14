@@ -17,3 +17,6 @@ It can improve both performance and readability when using it properly.
 # Walrus operator can reduce calls with maintaining the readability
 >>> [val for x in numlist if (val := f(x)) > 0]
 ```
+
+### Related
+- [What is the difference between an expression and a statement in Python?](https://stackoverflow.com/questions/4728073/what-is-the-difference-between-an-expression-and-a-statement-in-python)
