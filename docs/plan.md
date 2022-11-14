@@ -32,15 +32,12 @@ permalink: https://imreburn.github.io/docs/plan
   - how to fix CPU clock
 - Test
   - generate test cases: gtest, j-unit test
-  - Python `unittest`
+  - Python unittest
 - Integration
   - Travis CI
     - (Tutorial)[https://www.youtube.com/watch?v=xLWDOLhTH38]
   - Confluence
 
-
-
 ### Job Searching
-
 - Rewrite CV: resumé style
 - Review LinkedIn profile
