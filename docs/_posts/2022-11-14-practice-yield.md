@@ -34,7 +34,7 @@ def order(n, edges):
     return topo if len(topo) == n else None # detect cycle
 ```
 
-With `yield` keyword, we do not need a variable such as `topo` anymore to accumulate nodes.
+With `yield` keyword, we do not need a variable such as `topo` to accumulate results.
 However, this is not a very good example of using `yield` because the program should check in the end whether a cycle exists in the graph. (no topological order exists)
 
 ```python
