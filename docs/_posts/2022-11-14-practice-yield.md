@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Practice `yield` keyword (Python)
+title: Practice yield keyword (Python)
 katex: false
 ---
 
 When the callee function is iterable, we can use the keyword `yield`, instead of `return` to create a coroutine between the caller and callee.
-Two `order` functions are shown below, where both output a topological order given the number of nodes and the edges:the first is written with `return` and the second with `yield`.
+As an example, two `order` functions are shown below, where both output a topological order given the number of nodes and the edges.
+The first is written with `return` and the second with `yield`.
 
-With `return` keyword, a variable `topo` is the list to store the node in topological order. 
-Whenever a loop of `while` finishes, the next node in topological order is appended to the `topo`.
+With `return` keyword, a variable `topo` is a list to store the node in topological order and will be returned at the end.
+Whenever a single loop of `while` finishes, the next node in topological order is appended to the `topo`.
 
 ```python
 def order(n, edges):
