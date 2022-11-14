@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tip of the Day - defaultdict
+title: Tip of the Day - defaultdict (Python)
 katex: false
 ---
 

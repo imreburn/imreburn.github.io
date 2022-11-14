@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tip of the Day - Walrus operator
+title: Tip of the Day - Walrus operator (Python)
 katex: false
 ---
 
