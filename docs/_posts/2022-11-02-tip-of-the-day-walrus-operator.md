@@ -20,3 +20,4 @@ It can improve both performance and readability when using it properly.
 
 ### Related
 - [What is the difference between an expression and a statement in Python?](https://stackoverflow.com/questions/4728073/what-is-the-difference-between-an-expression-and-a-statement-in-python)
+- [The Walrus Operator: Python 3.8 Assignment Expressions](https://realpython.com/python-walrus-operator/)
