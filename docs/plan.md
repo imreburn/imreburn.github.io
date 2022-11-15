@@ -35,7 +35,7 @@ permalink: https://imreburn.github.io/docs/plan
   - Python unittest
 - Integration
   - Travis CI
-    - (Tutorial)[https://www.youtube.com/watch?v=xLWDOLhTH38]
+    - [Tutorial](https://www.youtube.com/watch?v=xLWDOLhTH38)
   - Confluence
 
 ### Job Searching
