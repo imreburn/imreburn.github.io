@@ -23,7 +23,7 @@ author:
   name: Jinhong Choi
   email: jinhong.choi@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Jinhong's personal blog for studying codes, programming and algorithms
+  Well-readable coding is well-written
   
 # baseurl:  # the subpath of your site, e.g. /blog
 url: "https://imreburn.github.io" # the base hostname & protocol for your site, e.g. http://example.com
