@@ -82,14 +82,15 @@
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+% \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[natbib, maxcitenames=3, mincitenames=1]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \addbibresource{citations.bib}
-\setlength\bibitemsep{1em}
+\setlength\bibitemsep{0.5em}
 
 % for social icons
 \usepackage{fontawesome5}
@@ -139,7 +140,7 @@
 \section{Summary}
 }
 \vspace{-2mm}
-Researching cyber-physical systems such as drones, experienced software development in C on drone platform. Professional experience and educational background in both computer science and mechanical engineering, I am interested in where software and hardware meets, from embedded to autonomous systems.
+Researching cyber-physical systems such as drones, experienced software development in C on drone platform. Professional experience and educational background in both computer science and mechanical engineering, I am interested in where software and hardware intersect, from embedded IoT devices to autonomous vehicles.
 % current experience, focus, interest?
 % interest - embedded software development, C C++
 % what is my experience? hardware - auto industry, software - drone
@@ -251,9 +252,9 @@ Bachelors of Science, Mechanical Engineering, \textit{summa cum laude} (GPA: 3.9
 }
 \vspace{-2.5mm}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{Programming Languages} &  \normalsize{C/C++, Python, Haskell}\\
-\textbf{Languages}  &  \normalsize{English, Korean(Native)}\\
-\textbf{Others}  &  \normalsize{Git, Unix/Linux, MATLAB}\\
+\textbf{Programming Languages} &  \normalsize{C/C++, Python, Julia, Haskell}\\
+\textbf{Languages}  &  \normalsize{English(Fluent), Korean(Native)}\\
+\textbf{Others}  &  \normalsize{Git, FreeRTOS, Unix/Linux, MATLAB}\\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -267,8 +268,6 @@ Bachelors of Science, Mechanical Engineering, \textit{summa cum laude} (GPA: 3.9
 \nocite{*}
 \printbibliography[heading=none]
 \end{refsection}
-
-
 
 \vfill
 \center{\footnotesize Last updated: April 2024}
