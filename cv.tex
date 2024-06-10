@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,9pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -83,7 +83,8 @@
 
 %for publications
 % \usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
-\usepackage[natbib, maxcitenames=3, mincitenames=1]{biblatex}
+% \usepackage[natbib, maxcitenames=3, mincitenames=1, sorting=ydnt]{biblatex}
+\usepackage[natbib, maxbibnames=99, sorting=ydnt]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
@@ -123,7 +124,7 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{\textsc{Jinhong "Jin" Choi}} \\[7.5pt]
+\huge{\textsc{Jinhong "Jin" Choi}} \\[5pt]
 \href{https://maps.app.goo.gl/MZnhHPBDA4aGkcFG9}{\raisebox{-0.05\height}\faMapMarked \ Corvallis, OR} \ $|$ \ 
 \href{tel:+16178033057}{\raisebox{-0.05\height}\faMobile \ +1.617.803.3057} \ $|$ \ 
 \href{mailto:jinhong.choi@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ jinhong.choi@gmail.com} \ $|$ \ 
@@ -154,16 +155,14 @@ Researching cyber-physical systems such as drones, experienced software developm
 }    
 \vspace{-2mm}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textcolor{Black}{\textbf{Oregon State University}} \hfill & Corvallis, OR\\[2pt]
-\multicolumn{2}{@{}X@{}}{Master of Science, Electrical Engineering and Computer Science (GPA: 3.83/4.00)}{April 2019 -- June 2024}\\[2pt]
-- Research topic: Application of a decentralized algorithm to the swarm of small drones\\[4pt]
-\textcolor{Black}{\textbf{Massachusetts Institute of Technology}} & \hfill Cambridge, MA\\[2pt]
-Completed 72 credits towards a MS in Mechanical Engineering (GPA: 4.8/5.0) & \hfill September 2010 -- January 2014\\[4pt]
-\textcolor{Black}{\textbf{Korea Advanced Institute of Science and Technology}} & Daejeon, South Korea\\[2pt]
+\textcolor{Black}{\textbf{Oregon State University}} \hfill & Corvallis, OR\\[1pt]
+\multicolumn{2}{@{}X@{}}{Master of Science, Electrical Engineering and Computer Science (GPA: 3.83/4.00)}{April 2019 -- June 2024}\\[1pt]
+- Research topic: Application of a decentralized algorithm to the swarm of small drones\\[2pt]
+\textcolor{Black}{\textbf{Massachusetts Institute of Technology}} & \hfill Cambridge, MA\\[1pt]
+Completed 72 credits towards a MS in Mechanical Engineering (GPA: 4.8/5.0) & \hfill September 2010 -- January 2014\\[1pt]
+\textcolor{Black}{\textbf{Korea Advanced Institute of Science and Technology}} & Daejeon, South Korea\\[1pt]
 Bachelors of Science, Mechanical Engineering, \textit{summa cum laude} (GPA: 3.91/4.00) & \hfill January 2010
 \end{tabularx}
-
-
 
 %Experience
 {\fontfamily{ptm}\selectfont
@@ -171,7 +170,7 @@ Bachelors of Science, Mechanical Engineering, \textit{summa cum laude} (GPA: 3.9
 }
 \vspace{-2mm}
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textcolor{Black}{\textbf{Oregon State University}} & \hfill Corvallis, OR \\[2pt]
+\textcolor{Black}{\textbf{Oregon State University}} & \hfill Corvallis, OR \\[1pt]
 \multicolumn{2}{@{}X@{}}{Graduate Research Assistant}{June 2020 -- Present}
 \end{tabularx}
 \vspace{-1em}
@@ -192,7 +191,7 @@ Bachelors of Science, Mechanical Engineering, \textit{summa cum laude} (GPA: 3.9
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
 \textcolor{Black}{\textbf{Hyundai KEFICO}} & \hfill Gunpo, South Korea \\[2pt]
-\multicolumn{2}{@{}X@{}}{Researcher, Prototype Development Team}{February 2016 -- February 2019}\\[2pt]
+\multicolumn{2}{@{}X@{}}{Researcher, Prototype Development Team}{February 2016 -- February 2019}\\[1pt]
 \end{tabularx}
 \vspace{-1em}
 \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
@@ -208,13 +207,13 @@ Bachelors of Science, Mechanical Engineering, \textit{summa cum laude} (GPA: 3.9
 \vspace{-1em}
 \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt]
     \item Consulted on optically transparent adhesive used in touchscreens for mobile devices
-    \item Helped communication between sales, R\&D and customers
+    % \item Helped communication between sales, R\&D and customers
 \end{itemize}
 
 \vspace{-2mm}
 
 \begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textcolor{Black}{\textbf{Hantouch}} & \hfill Seoul, South Korea \\[2pt]
+\textcolor{Black}{\textbf{Hantouch}} & \hfill Seoul, South Korea \\[1pt]
 \multicolumn{2}{@{}X@{}}{Researcher (alternative to mandatory military service)}{February 2007 -- May 2009}
 \end{tabularx}
 \vspace{-1em}
@@ -271,6 +270,6 @@ Bachelors of Science, Mechanical Engineering, \textit{summa cum laude} (GPA: 3.9
 \end{refsection}
 
 \vfill
-\center{\footnotesize Last updated: April 2024}
+\center{\footnotesize Last updated: June 2024}
 
 \end{document}
