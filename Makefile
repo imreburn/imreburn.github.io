@@ -1,4 +1,4 @@
-NAME=cv
+NAME=jinchoi-resume
 
 all:
 	latexmk -pdf ${NAME}.tex
