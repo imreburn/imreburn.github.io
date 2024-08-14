@@ -1,5 +1,5 @@
 NAME=main
-TARGET=jinchoi-resume
+TARGET=jinhongchoi-resume
 
 all:
 	latexmk -pdf ${NAME}.tex
