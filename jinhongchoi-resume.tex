@@ -22,6 +22,7 @@
 
 \usepackage{fontawesome5}
 \usepackage[natbib, maxbibnames=99, sorting=ydnt]{biblatex}
+\def\bibfont{\footnotesize}
 \addbibresource{mypubs.bib}
 
 %----------FONT OPTIONS----------
@@ -82,7 +83,7 @@
 \newcommand{\resumeSubheadingNew}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small #2} \\
+      \textbf{\small#1} & \textit{\small #2} \\
       \textit{\small#3} & \small #4 \\
     \end{tabular*}\vspace{-6pt}
 }
@@ -90,9 +91,9 @@
 \newcommand{\resumeSubheadingNewLine}[5]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{\small #2} \\
+      \textbf{\small#1} & \textit{\small #2} \\
       \textit{\small#3} & \small #4 \\
-      \textit{\small#5} & \\
+      {\small#5} & \\
     \end{tabular*}\vspace{-6pt}
 }
 
@@ -107,18 +108,18 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[rightmargin=1.5cm]}
+\newcommand{\resumeItemListStart}{\vspace{-0.2em}\begin{itemize}[itemsep=0em, leftmargin=0.15in, rightmargin=1cm]}
 % \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,29 +134,30 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Jinhong ``Jin'' Choi} \\ \vspace{5pt}
-    \small \faMobile~~617-803-3057 $|$ \href{mailto:jinhong.choi@gmail.com}{\faEnvelope~~\underline{jinhong.choi@gmail.com}} $|$ 
+    \textbf{\huge Jinhong ``Jin'' Choi} \\ \vspace{5pt}
+    \small \faMobile~~+1-617-803-3057 $|$ \href{mailto:jinhong.choi@gmail.com}{\faEnvelope~~\underline{jinhong.choi@gmail.com}} $|$ 
     \href{https://linkedin.com/in/jinhongchoi-osu}{\faLinkedin~~\underline{jinhongchoi-osu}} $|$
     \href{https://github.com/imreburn}{\faGithub~~\underline{imreburn}}
 \end{center}
 
 \section{Summary}
-\begin{itemize}[leftmargin=0.15in, label={}, rightmargin=0.15in]
-\small{\item{Experienced in multiple projects for cyber-physical systems (CPS), with a focus on drones, during my MS in Computer Science. Possesses a strong foundation in both computer science and mechanical engineering, backed by 3 years of work experience in the automotive industry. Driven by a vision to develop advanced middlewares for various CPS, from IoT devices to ground and air vehicles, that meets the evolving demands of both the present and the future.}}
-\end{itemize}
+\vspace{-2pt}
+\begin{itemize}[leftmargin=0.05in, label={}, rightmargin=0.15in]
+\small{\item{Experienced in multiple projects for cyber-physical systems (CPS), with a focus on drones during MS in Computer Science. Possesses a strong foundation in both computer science and mechanical engineering, backed by 3 years of work experience in the automotive industry. Driven by a vision to develop advanced middlewares for various CPS, from IoT devices to ground and air vehicles, that meets the evolving demands of both the present and the future.}}
+\end{itemize}\vspace{-1.5em}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheadingNew
+    \resumeSubheadingNewLine
       {Oregon State University}{Corvallis, OR}
-      {Master of Science in  Electrical Engineering and Computer Science (GPA: 3.83/4.00)}{Apr 2019 -- Aug 2024}
+      {Master of Science in  Electrical Engineering and Computer Science (GPA: 3.83/4.00)}{Apr 2019 -- Aug 2024}{\textit{\textbf{Topic:}~A Swarm of Drones Detecting Global Predicate in Real-time via Decentralized Algorithm}}
     \resumeSubheadingNew
       {Massachusetts Institute of Technology (MIT)}{Cambridge, MA}
       {Completed 72 credits towards graduate degree in Mechanical Engineering (GPA: 4.8/5.0)}{Sep 2010 -- Jan 2014}
     \resumeSubheadingNewLine
       {Korea Advanced Institute of Science and Technology (KAIST)}{Daejeon, South Korea}
-      {Bachelors of Science in Mechanical Engineering, Minor in Business Management}{Mar 2003 -- Jan 2010}{Graduated summa cum laude (GPA: 3.91/4.00)}
+      {Bachelors of Science in Mechanical Engineering, Minor in Business Management}{Mar 2003 -- Jan 2010}{\textit{Graduated summa cum laude (GPA: 3.91/4.00)}}
   \resumeSubHeadingListEnd
 
 
@@ -167,9 +169,9 @@
       {Oregon State University}{Corvallis, OR}
       {Graduate Research/Teaching Assistant}{Jun 2020 -- Jun 2024}
       \resumeItemListStart
-        \resumeItem{Conducted three projects with FAA regarding cyber-physical security and safety of Unmanned Aircraft System (UAS)}
-        \resumeItem{Conducted a project with OMIC to enhance human-robot teaming via improvements to nonverbal robot expression}
-        \resumeItem{Lectured labs and recitations, held office hours, and graded assignments for Operating Systems II, Algorithms and Data Structures courses}
+        \resumeItem{Conducted three projects regarding cyber-physical security, autonomy and safety of Unmanned Aircraft System (UAS), funded by Federal Aviation Administration~(FAA)}
+        \resumeItem{Conducted a project to enhance human-robot teaming via improvements to nonverbal robot expression, funded by Oregon Manufacturing Innovation Center (OMIC)}
+        \resumeItem{Teaching Assistant for Operating Systems II~(CS544), Algorithms and Data Structures~(CS515): Lectured labs and recitations, held office hours, and graded exams and assignments}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -184,7 +186,7 @@
 
     \resumeSubheadingNew
       {Hyundai KEFICO}{Gunpo, South Korea}
-      {Researcher in Prototype Development Team}{Feb 2016 -- Feb 2019}
+      {Researcher}{Feb 2016 -- Feb 2019}
       \resumeItemListStart
         \resumeItem{Prototyped gasoline fuel injectors under development, specialized to control femto-second laser machines for precise drilling of fuel spray holes}
     \resumeItemListEnd
@@ -212,11 +214,11 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Crazyflie} $|$ \emph{C, Python}}{\small Jun 2023 -- Present}
+          {\textbf{Decentralized Swarm of Drones} $|$ \emph{C, Python}}{\small Jun 2023 -- Aug 2024}
           \resumeItemListStart
-            \resumeItem{Implemented theoretical algorithms for indoor, palm-sized drones}
+            \resumeItem{Implemented theoretical algorithms for indoor, palm-sized drones, using Crazyflie by Bitcraze}
             \resumeItem{Conducted experiments with a swarm of drones, enabling wireless communication and decentralized operation}
-            \resumeItem{Built an indoor testbed for drones, including a positioning system}
+            \resumeItem{Built an indoor testbed for drones including a positioning system}
           \resumeItemListEnd
       % \resumeProjectHeading
           % {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
@@ -229,11 +231,11 @@
     \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills \& Languages}
- \begin{itemize}[leftmargin=0.15in, label={}]
+\section{Skills \& Languages}
+ \begin{itemize}[leftmargin=0.05in, label={}]
     \small{\item{
      \textbf{Programming Languages}{~~~C/C++, Python, Julia, Haskell, MATLAB, LaTeX} \\
-     \textbf{Platforms}{~~~FreeRTOS, ROS, Linux, Protobuf, CAN/LIN} \\
+     \textbf{Platforms}{~~~FreeRTOS, Linux, Protobuf} \\
      \textbf{Tools}{~~~Git, VS Code, AutoCAD}\\
      \textbf{Languagues}{~~~\textit{Korean}~(Native),~~\textit{English}~(Professional)}
     }}
