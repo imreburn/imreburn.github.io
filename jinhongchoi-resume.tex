@@ -23,8 +23,11 @@
 
 \usepackage{fontawesome5}
 \usepackage[natbib, maxbibnames=99, sorting=ydnt]{biblatex}
-\def\bibfont{\small}
+\def\bibfont{\footnotesize}
 \addbibresource{mypubs.bib}
+
+% Please add the following required packages to your document preamble:
+\usepackage{multirow}
 
 %----------FONT OPTIONS----------
 % sans-serif
@@ -36,6 +39,7 @@
 % serif
 % \usepackage{CormorantGaramond}
 % \usepackage{charter}
+% \usepackage{times}
 
 
 \pagestyle{fancy}
@@ -59,7 +63,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-7pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -81,19 +85,19 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
+% \newcommand{\resumeSubSubheading}[2]{
+%     \item
+%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%       \textit{\small#1} & \textit{\small #2} \\
+%     \end{tabular*}\vspace{-7pt}
+% }
 
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-6pt}
-}
+% \newcommand{\resumeProjectHeading}[2]{
+%     \item
+%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+%       \small#1 & #2 \\
+%     \end{tabular*}\vspace{-6pt}
+% }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
@@ -111,32 +115,19 @@
 \begin{document}
 
 %----------HEADING----------
+\begin{table}[]
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Jinhong ``Crimson'' Choi}} & Email : \href{mailto:jinhong.choi@gmail.com}{\faEnvelope~~jinhong.choi@gmail.com}\\
-  & \faMobile~~+1-617-803-3057 \\
-  & \href{https://linkedin.com/in/jinhongchoi-osu}{\faLinkedin~~\underline{jinhongchoi-osu}} \\
+\multirow{3}{*}{\textbf{\huge Jinhong ``Crimson'' Choi}} & \faEnvelope~~\href{mailto:jinhong.choi@gmail.com}{jinhong.choi@gmail.com} \\
+                                      & \faMobile~~+1-617-803-3057       \\
+                                      & \faLinkedin~~\href{https://linkedin.com/in/jinhongchoi-osu}{jinhongchoi-osu}    
 \end{tabular*}
+\end{table}\vspace{-1em}
 
-% \begin{center}
-%     % {\huge Jinhong ``Jin" Choi} \\
-%     \textbf{\huge\fontfamily{qhv}\selectfont{Jinhong ``Jin'' Choi}} \\ \vspace{5pt}
-    
-%     \small {\faMapMarker~~Corvallis, OR} $|$
-%     \faMobile~~+1-617-803-3057 $|$ \href{mailto:jinhong.choi@gmail.com}
-%     {\faEnvelope~~\underline{jinhong.choi@gmail.com}} $|$ 
-%     \href{https://linkedin.com/in/jinhongchoi-osu}{\faLinkedin~~\underline{jinhongchoi-osu}}
-%     % \href{https://linkedin.com/in/jinhongchoi-osu}{\faLinkedin~~\underline{jinhongchoi-osu}} $|$
-%     % \href{https://github.com/imreburn}{\faGithub~~\underline{imreburn}}
-% \end{center}
-
-% ---HEADLINE----
-% \begin{itemize}[leftmargin=0.05in, label={}, rightmargin=0.2in]
-%     \item{\textit{Best in the world!}}
-% \end{itemize}\vspace{-1.5em}
-
+%-----------SUMMARY-----------
 \section{Summary}
-\vspace{-2pt}
-\resumeItem{Result-driven Embedded Software Engineer with a multidisciplinary background in computer science and mechanical engineering. Experienced in multiple research projects regarding drones. 3-year professional experience in automobile industry. Strong foundation in both computer science and mechanical engineering. Passionate about solving low-level performance and safety challenges in cyber-physical systems.}
+\resumeSubHeadingListStart
+    \resumeSubItem{Result-driven Embedded Software Engineer with a multidisciplinary background in computer science and mechanical engineering. Experienced in multiple research projects regarding drones. 3-year professional experience in automobile industry. Passionate about solving low-level performance and safety challenges in cyber-physical systems.}
+\resumeSubHeadingListEnd
 % \begin{itemize}[leftmargin=0.05in, label={}, rightmargin=0.2in]
 % \small{\item{Result-driven Embedded Software Engineer with a multidisciplinary background in computer science and mechanical engineering. Experienced in multiple research projects regarding drones. 3-year professional experience in automobile industry. Strong foundation in both computer science and mechanical engineering. Passionate about solving low-level performance and safety challenges in cyber-physical systems.}}
 % \end{itemize}\vspace{-1.5em}
@@ -149,12 +140,12 @@
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
  \resumeSubHeadingListStart
-  \item{
+  \resumeSubItem{
     \textbf{Programming Languages}{: C, C++, Python, Julia, Haskell}
     \hfill
     \textbf{Technologies}{: Git, FreeRTOS, ROS, Intel SGX}
   }
-  \item{
+  \resumeSubItem{
     \textbf{Protocols}{: CAN, LIN, RemoteID}
     \hfill
     \textbf{Languages}{: English (fluent), Korean (native)}
@@ -175,12 +166,12 @@
     
     \resumeSubheading
       {Oregon State University}{Corvallis, OR}
-      {Research and Teaching Assistant}{Jun 2020 - Jun 2024}
+      {Research and Teaching Assistant}{Jun 2020 -- Jun 2024}
       \resumeItemListStart
         \resumeItem{\textbf{Drone Security}: Surveyed cyber-physical security and safety of autonomous drones, funded by Federal Aviation Administration~(FAA)}
         % \resumeItem{Published a survey paper on data injection attacks against sensors (e.g. IMU, microphone, GPS, Lidar), commonly equipped in modern cyber-physical and embedded systems such as drones, ground vehicles and smart speakers}
         \resumeItem{\textbf{Nonverbal Robot Expression}: Enhanced human-robot teaming via improvement in nonverbal robot expression, funded by Oregon Manufacturing Innovation Center (OMIC)}
-        \resumeItem{\textbf{Teaching}: Lectured labs, held office hours, and graded exams and assignments  for core graduate courses - Operating Systems II, Algorithms and Data Structures}
+        \resumeItem{\textbf{Teaching}: Lectured labs, held office hours, and graded exams and assignments for core graduate courses --- Operating Systems II, Algorithms and Data Structures}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -195,7 +186,7 @@
 
     \resumeSubheading
       {Hyundai KEFICO}{Gunpo, South Korea}
-      {Researcher, Prototype Development Team}{Feb 2016 - Feb 2019}
+      {Researcher, Prototype Development Team}{Feb 2016 -- Feb 2019}
       \resumeItemListStart
         \resumeItem{Developed manufacturing processes for gasoline fuel injectors, focusing on controlling the flow rate precisely using femto-second laser machines}
     \resumeItemListEnd
@@ -207,9 +198,9 @@
         \resumeItem{Consulted on optically transparent adhesive for touchscreens}
       \resumeItemListEnd
 
-    \resumeSubheadingNew
+    \resumeSubheading
       {Hantouch}{Seoul, South Korea}
-      {Researcher (Alternative Military Service Program)}{Feb 2007 - May 2009}
+      {Researcher (Alternative Military Service Program)}{Feb 2007 -- May 2009}
       \resumeItemListStart
         \resumeItem{Engineered resistive touchscreens for mobile integration, resulting in 3 patents granted in South Korea
         % \\ (Application Numbers: 10-2008-0070246, 10-2008-0056270, 10-2007-0113098)
@@ -218,6 +209,26 @@
 
   \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oregon State University}{Corvallis, OR, USA}
+      {MS in  Computer Science; GPA: 3.83/4.00}{Apr 2019 -- Aug 2024}
+    \resumeSubheading
+      {Massachusetts Institute of Technology}{Cambridge, MA, USA}
+      {Completed 72 credits towards graduate degree in Mechanical Engineering; GPA: 4.8/5.0}{Sep 2010 -- Jan 2014}
+      \resumeItemListStart
+        \resumeItem{Awarded a scholarship from Kwanjeong Educational Foundation in South Korea}
+      \resumeItemListEnd
+        
+    \resumeSubheading
+      {Korea Advanced Institute of Science and Technology}{Daejeon, South Korea}
+      {BS in Mechanical Engineering, minor in Business Management; GPA: 3.91/4.00}{Mar 2003 -- Jan 2010}
+      \resumeItemListStart
+        \resumeItem{Graduated \textit{summa cum laude}}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
@@ -225,27 +236,6 @@
       \resumeSubItem{\textbf{Swarm of Autonomous Drones}: Tested algorithms for a swarm of autonomous palm-sized drones, and developed applications in \textit{C} for drones, which has restriced resource, operates in real-time}
     \resumeSubHeadingListEnd
 
-
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Oregon State University}{Corvallis, OR, USA}
-      {MS in  Computer Science; GPA: 3.83/4.00}{Apr 2019 - Aug 2024}
-    \resumeSubheading
-      {Massachusetts Institute of Technology}{Cambridge, MA, USA}
-      {Completed 72 credits towards graduate degree in Mechanical Engineering; GPA: 4.8/5.0}{Sep 2010 - Jan 2014}
-      \resumeItemListStart
-        \resumeItem{Awarded a scholarship from Kwanjeong Educational Foundation in South Korea}
-      \resumeItemListEnd
-        
-    \resumeSubheading
-      {Korea Advanced Institute of Science and Technology}{Daejeon, South Korea}
-      {BS in Mechanical Engineering, minor in Business Management; GPA: 3.91/4.00}{Mar 2003 - Jan 2010}
-      \resumeItemListStart
-        \resumeItem{Graduated \textit{summa cum laude}}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
 
 
 %-----------LANGUAGES-----------
