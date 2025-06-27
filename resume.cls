@@ -4,6 +4,8 @@
 \LoadClass[11pt,letterpaper]{article}
 % \usepackage{times}
 \usepackage{enumitem}
+% \usepackage[T1]{fontenc}
+% \setmainfont{CMU Serif}
 \usepackage[top=0.63cm,bottom=0.63cm,right=1.1cm,left=1.1cm]{geometry}
 
 \setlength{\parindent}{0em}
@@ -24,10 +26,11 @@
 \def \makeheader {\makebox[\textwidth]{\hfill\makename\hfill\makecontact}}
 
 \newenvironment{ResumeSection}[1]{
-    \MakeUppercase{\bf #1}
+    {\large{\textsc{#1}}}
     \smallskip\hrule\medskip
 }{
-    \bigskip
+    \medskip
+    % \bigskip
 }
 
 \define@key{subsection}{org}{\def\subsection@org{#1}}
