@@ -22,7 +22,8 @@
 \input{glyphtounicode}
 
 \usepackage{fontawesome5}
-\usepackage[natbib, maxbibnames=99, sorting=ydnt]{biblatex}
+\usepackage[natbib, maxbibnames=99, sorting=ydnt, giveninits=true]{biblatex}
+% \bibliographystyle{abbrvnat}
 \def\bibfont{\footnotesize}
 \addbibresource{mypubs.bib}
 
@@ -80,7 +81,7 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & \small#2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -159,6 +160,11 @@
 %   \textbf{Languages}{~~~English, Korean}
 % }}
 
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeSubItem{\textbf{Swarm of Autonomous Drones}: Tested algorithms for a swarm of autonomous palm-sized drones, and developed applications in \textit{C} for drones, which has restriced resource, operates in real-time}
+    \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Work Experience}
@@ -230,11 +236,7 @@
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeSubItem{\textbf{Swarm of Autonomous Drones}: Tested algorithms for a swarm of autonomous palm-sized drones, and developed applications in \textit{C} for drones, which has restriced resource, operates in real-time}
-    \resumeSubHeadingListEnd
+
 
 
 
