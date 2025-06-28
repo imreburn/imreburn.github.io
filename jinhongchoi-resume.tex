@@ -23,7 +23,6 @@
 
 \usepackage{fontawesome5}
 \usepackage[natbib, maxbibnames=99, sorting=ydnt, giveninits=true]{biblatex}
-% \bibliographystyle{abbrvnat}
 \def\bibfont{\footnotesize}
 \addbibresource{mypubs.bib}
 
@@ -52,9 +51,9 @@
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.6in}
-\addtolength{\textwidth}{1.2in}
+\addtolength{\textwidth}{1.3in}
 \addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.2in}
+\addtolength{\textheight}{1.3in}
 
 \urlstyle{same}
 
@@ -82,6 +81,7 @@
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \small#2 \\
+      % \textit{\small#3} & {\small #4} \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -102,11 +102,13 @@
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\circ$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 %-------------------------------------------
@@ -127,22 +129,14 @@
 %-----------SUMMARY-----------
 \section{Summary}
 \resumeSubHeadingListStart
-    \resumeSubItem{Result-driven Embedded Software Engineer with a multidisciplinary background in computer science and mechanical engineering. Experienced in multiple research projects regarding drones. 3-year professional experience in automobile industry. Passionate about solving low-level performance and safety challenges in cyber-physical systems.}
+    \resumeSubItem{Results-driven Embedded Software Engineer with a multidisciplinary background in computer science and mechanical engineering. Experienced in research projects involving drones and cyber-physical security. 3 years of professional experience in the automotive industry. Passionate about addressing low-level performance and safety challenges in cyber-physical systems.}
 \resumeSubHeadingListEnd
-% \begin{itemize}[leftmargin=0.05in, label={}, rightmargin=0.2in]
-% \small{\item{Result-driven Embedded Software Engineer with a multidisciplinary background in computer science and mechanical engineering. Experienced in multiple research projects regarding drones. 3-year professional experience in automobile industry. Strong foundation in both computer science and mechanical engineering. Passionate about solving low-level performance and safety challenges in cyber-physical systems.}}
-% \end{itemize}\vspace{-1.5em}
-% Seeking an Embedded Software Engineering 
-% detail-oriented 
-% sucessfully led a project from the scratch
-% specialty, strength
-% \small{\item{Experienced in multiple cyber-physical system (CPS) projects, with a particular focus on drones during an MS in Computer Science. Strong foundation in both computer science and mechanical engineering. Driven by a vision to develop secure and advanced middleware to meet evolving demands across various CPS applications, ranging from IoT devices to ground and aerial vehicles.}}
 
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
  \resumeSubHeadingListStart
   \resumeSubItem{
-    \textbf{Programming Languages}{: C, C++, Python, Julia, Haskell}
+    \textbf{Programming Languages}{: C, C++, Python, Julia, Haskell, Rust}
     \hfill
     \textbf{Technologies}{: Git, FreeRTOS, ROS, Intel SGX}
   }
@@ -162,9 +156,11 @@
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \resumeSubHeadingListStart
-      \resumeSubItem{\textbf{Swarm of Autonomous Drones}: Tested algorithms for a swarm of autonomous palm-sized drones, and developed applications in \textit{C} for drones, which has restriced resource, operates in real-time}
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubItem{\textbf{Phryctoria}: Implemented and demonstrated \textit{Phryctoria}, a decentralized algorithm for real-time global predicate detection, on a swarm of resource-constrained drones in a real-world setting.}
+  \resumeSubItem{\textbf{OUT-HERD}~\cite{patil2024outherd}: Implemented and experimentally validated a drone-herding algorithm on real drones, which exploits RemoteID (continuous public broadcasts of identification and location data) and the target’s collision-avoidance system.}
+  \resumeSubItem{\textbf{Sensor Security}~\cite{choi2022survey}: Surveyed vulnerabilities to false data injection attacks and countermeasures for sensors (e.g., IMU, GPS, LiDAR, microphones) in cyber-physical and embedded systems such as autonomous drones, vehicles, and smart speakers.}
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Work Experience}
@@ -174,10 +170,10 @@
       {Oregon State University}{Corvallis, OR}
       {Research and Teaching Assistant}{Jun 2020 -- Jun 2024}
       \resumeItemListStart
-        \resumeItem{\textbf{Drone Security}: Surveyed cyber-physical security and safety of autonomous drones, funded by Federal Aviation Administration~(FAA)}
+        \resumeItem{\textbf{Drone Security}: Surveyed cyber-physical security and safety of autonomous drones, funded by Federal Aviation Administration~(FAA).}
         % \resumeItem{Published a survey paper on data injection attacks against sensors (e.g. IMU, microphone, GPS, Lidar), commonly equipped in modern cyber-physical and embedded systems such as drones, ground vehicles and smart speakers}
-        \resumeItem{\textbf{Nonverbal Robot Expression}: Enhanced human-robot teaming via improvement in nonverbal robot expression, funded by Oregon Manufacturing Innovation Center (OMIC)}
-        \resumeItem{\textbf{Teaching}: Lectured labs, held office hours, and graded exams and assignments for core graduate courses --- Operating Systems II, Algorithms and Data Structures}
+        \resumeItem{\textbf{Nonverbal Robot Expression}: Enhanced human-robot teaming via improvement in nonverbal robot expression, funded by Oregon Manufacturing Innovation Center (OMIC).}
+        \resumeItem{\textbf{Teaching}: Lectured labs, held office hours, and graded exams and assignments for core graduate courses --- Operating Systems II, Algorithms and Data Structures.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -192,13 +188,13 @@
 
     \resumeSubheading
       {Hyundai KEFICO}{Gunpo, South Korea}
-      {Researcher, Prototype Development Team}{Feb 2016 -- Feb 2019}
+      {Researcher}{Feb 2016 -- Feb 2019}
       \resumeItemListStart
         \resumeItem{Developed manufacturing processes for gasoline fuel injectors, focusing on controlling the flow rate precisely using femto-second laser machines}
     \resumeItemListEnd
 
     \resumeSubheading
-      {LX Hausys \textit{(previously LG Hausys)}}{Seoul, South Korea}
+      {LX Hausys (previously LG Hausys)}{Seoul, South Korea}
       {Consultant}{Feb 2010 -- Jun 2010}
       \resumeItemListStart
         \resumeItem{Consulted on optically transparent adhesive for touchscreens}
@@ -223,7 +219,7 @@
       {MS in  Computer Science; GPA: 3.83/4.00}{Apr 2019 -- Aug 2024}
     \resumeSubheading
       {Massachusetts Institute of Technology}{Cambridge, MA, USA}
-      {Completed 72 credits towards graduate degree in Mechanical Engineering; GPA: 4.8/5.0}{Sep 2010 -- Jan 2014}
+      {Completed graduate coursework in Mechanical Engineering; GPA: 4.8/5.0}{Sep 2010 -- Jan 2014}
       \resumeItemListStart
         \resumeItem{Awarded a scholarship from Kwanjeong Educational Foundation in South Korea}
       \resumeItemListEnd
@@ -235,10 +231,6 @@
         \resumeItem{Graduated \textit{summa cum laude}}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-
-
-
-
 
 %-----------LANGUAGES-----------
 % \section{Languages}
@@ -258,59 +250,3 @@
 
 \end{document}
 
-
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
-% \newcommand{\resumeSubheading}[4]{
-%   \vspace{-2pt}\item
-%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-%       \textbf{#1} & #2 \\
-%       \textit{\small#3} & \textit{\small #4} \\
-%     \end{tabular*}\vspace{-7pt}
-% }
-
-% \newcommand{\resumeSubheadingNew}[4]{
-%   \vspace{-2pt}\item
-%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-%       \textbf{\small#1} & \textit{\small #2} \\
-%       \textit{\small#3} & \small #4 \\
-%     \end{tabular*}\vspace{-6pt}
-% }
-
-% \newcommand{\resumeSubheadingNewLine}[5]{
-%   \vspace{-2pt}\item
-%     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-%       \textbf{\small#1} & \textit{\small #2} \\
-%       \textit{\small#3} & \small #4 \\
-%       {\small#5} & \\
-%     \end{tabular*}\vspace{-6pt}
-% }
-
-% \newcommand{\resumeSubSubheading}[2]{
-%     \item
-%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-%       \textit{\small#1} & \textit{\small #2} \\
-%     \end{tabular*}\vspace{-7pt}
-% }
-
-% \newcommand{\resumeProjectHeading}[2]{
-%     \item
-%     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-%       \small#1 & #2 \\
-%     \end{tabular*}\vspace{-6pt}
-% }
-
-% \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-% \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-% \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.05in, label={}]}
-% \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-% \newcommand{\resumeItemListStart}{\vspace{-0.2em}\begin{itemize}[itemsep=0em, leftmargin=0.15in, rightmargin=1cm]}
-% % \newcommand{\resumeItemListStart}{\begin{itemize}}
-% \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
