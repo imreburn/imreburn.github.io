@@ -14,17 +14,25 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{csquotes}
+\usepackage{adjustbox}
 \input{glyphtounicode}
 
 \usepackage{fontawesome5}
 \usepackage[natbib, maxbibnames=99, sorting=ydnt, giveninits=true]{biblatex}
 \def\bibfont{\footnotesize}
 \addbibresource{mypubs.bib}
+
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor   = red %Colour of citations
+}
 
 % Please add the following required packages to your document preamble:
 \usepackage{multirow}
@@ -80,7 +88,7 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \small#2 \\
+      \textbf{\small#1} & \small#2 \\
       % \textit{\small#3} & {\small #4} \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
@@ -120,30 +128,33 @@
 %----------HEADING----------
 \begin{table}[]
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-\multirow{3}{*}{\textbf{\huge Jinhong ``Crimson'' Choi}} & \faEnvelope~~\href{mailto:jinhong.choi@gmail.com}{jinhong.choi@gmail.com} \\
-                                      & \faMobile~~+1-617-803-3057       \\
-                                      & \faLinkedin~~\href{https://linkedin.com/in/jinhongchoi-osu}{jinhongchoi-osu}    
+\multirow{3}{*}{\textbf{\huge Jinhong ``Jin'' Choi}} & \faEnvelope~\href{mailto:jinhong.choi@gmail.com}{jinhong.choi@gmail.com} \\
+                                      & \faMobile~+1-617-803-3057       \\
+                                      & \faLinkedin~\href{https://linkedin.com/in/jinhongchoi-osu}{jinhongchoi-osu}    
 \end{tabular*}
 \end{table}\vspace{-1em}
 
 %-----------SUMMARY-----------
-\section{Summary}
-\resumeSubHeadingListStart
-    \resumeSubItem{Results-driven Embedded Software Engineer with a multidisciplinary background in computer science and mechanical engineering. Experienced in research projects involving drones and cyber-physical security. 3 years of professional experience in the automotive industry. Passionate about addressing low-level performance and safety challenges in cyber-physical systems.}
-\resumeSubHeadingListEnd
-
+% \section{Summary}
+% \resumeSubHeadingListStart
+%     \resumeSubItem{Results-driven Software Engineer for Robots and Air/Ground Vehicles with a multidisciplinary background in computer science and mechanical engineering. 3+ years of experience in research projects regarding drones. 3 years of professional experience in the automotive industry. Passionate about addressing low-level performance and safety challenges in cyber-physical systems.}
+% \resumeSubHeadingListEnd
+% \begin{adjustbox}{minipage=.97\textwidth, center}
+%     {\small Highly motivated Software Engineer for Robots and Air/Ground Vehicles with a multidisciplinary background in computer science and mechanical engineering. Over 3 years of research experience with drones and 3 years of professional experience in the automotive industry. Passionate about building secure and safe cyber-physical systems.}
+% \end{adjustbox}
+{\normalsize Highly motivated Software Engineer for Robots and Air/Ground Vehicles with a multidisciplinary background in computer science and mechanical engineering. Over 3 years of research experience with drones and 3 years of professional experience in the automotive industry. Passionate about building secure and safe cyber-physical systems.}
+\vspace{-1.5em}
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
  \resumeSubHeadingListStart
   \resumeSubItem{
     \textbf{Programming Languages}{: C, C++, Python, Julia, Haskell, Rust}
     \hfill
-    \textbf{Technologies}{: Git, FreeRTOS, ROS, Intel SGX}
+    \textbf{Languages}{: English (fluent), Korean (native)}
   }
   \resumeSubItem{
-    \textbf{Protocols}{: CAN, LIN, RemoteID}
+    \textbf{Technologies}{: Git, FreeRTOS, ROS, Intel SGX, RemoteID, Sensor fusion, Kalman filter}
     \hfill
-    \textbf{Languages}{: English (fluent), Korean (native)}
   }
  \resumeSubHeadingListEnd
  
@@ -157,9 +168,11 @@
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
-  \resumeSubItem{\textbf{Phryctoria}: Implemented and demonstrated \textit{Phryctoria}, a decentralized algorithm for real-time global predicate detection, on a swarm of resource-constrained drones in a real-world setting.}
-  \resumeSubItem{\textbf{OUT-HERD}~\cite{patil2024outherd}: Implemented and experimentally validated a drone-herding algorithm on real drones, which exploits RemoteID (continuous public broadcasts of identification and location data) and the target’s collision-avoidance system.}
-  \resumeSubItem{\textbf{Sensor Security}~\cite{choi2022survey}: Surveyed vulnerabilities to false data injection attacks and countermeasures for sensors (e.g., IMU, GPS, LiDAR, microphones) in cyber-physical and embedded systems such as autonomous drones, vehicles, and smart speakers.}
+  \resumeSubItem{\textbf{Phryctoria}: Implemented and demonstrated \textit{Phryctoria}, a decentralized runtime monitoring algorithm for real-time global predicate detection, on a swarm of resource-constrained drones in a real-world setting.~\href{https://youtube.com/shorts/KvSG24Fz8bg?feature=share}{\underline{Demo}}}
+  % https://youtube.com/shorts/KvSG24Fz8bg?feature=share
+  \resumeSubItem{\textbf{OUT-HERD}~\cite{patil2024outherd}: Implemented and experimentally validated a drone-herding algorithm on real drones, which exploits RemoteID and the target’s collision-avoidance systems for safe takeover and redirection.~\href{https://youtube.com/shorts/WAU-Fw27_nQ?feature=share}{\underline{Demo}}}
+  % https://youtube.com/shorts/WAU-Fw27_nQ?feature=share
+  \resumeSubItem{\textbf{Sensor Security}~\cite{choi2022survey}: Surveyed false data injection attacks and countermeasures targeting IMU, GPS, LiDAR, microphones, and ultrasonic sensors in modern cyber-physical systems.}
 \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
@@ -173,7 +186,7 @@
         \resumeItem{\textbf{Drone Security}: Surveyed cyber-physical security and safety of autonomous drones, funded by Federal Aviation Administration~(FAA).}
         % \resumeItem{Published a survey paper on data injection attacks against sensors (e.g. IMU, microphone, GPS, Lidar), commonly equipped in modern cyber-physical and embedded systems such as drones, ground vehicles and smart speakers}
         \resumeItem{\textbf{Nonverbal Robot Expression}: Enhanced human-robot teaming via improvement in nonverbal robot expression, funded by Oregon Manufacturing Innovation Center (OMIC).}
-        \resumeItem{\textbf{Teaching}: Lectured labs, held office hours, and graded exams and assignments for core graduate courses --- Operating Systems II, Algorithms and Data Structures.}
+        \resumeItem{\textbf{Teaching}: Taught and supported core graduate courses --- Operating Systems II, Algorithms and Data Structures.}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -188,23 +201,23 @@
 
     \resumeSubheading
       {Hyundai KEFICO}{Gunpo, South Korea}
-      {Researcher}{Feb 2016 -- Feb 2019}
+      {Researcher, Prototype Development Team}{Feb 2016 -- Feb 2019}
       \resumeItemListStart
-        \resumeItem{Developed manufacturing processes for gasoline fuel injectors, focusing on controlling the flow rate precisely using femto-second laser machines}
+        \resumeItem{Developed preciesion manufacturing for gasoline fuel injectors, using femtosecond laser systems.}
     \resumeItemListEnd
 
     \resumeSubheading
       {LX Hausys (previously LG Hausys)}{Seoul, South Korea}
       {Consultant}{Feb 2010 -- Jun 2010}
       \resumeItemListStart
-        \resumeItem{Consulted on optically transparent adhesive for touchscreens}
+        \resumeItem{Consulted on optically transparent adhesive for touchscreens.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Hantouch}{Seoul, South Korea}
       {Researcher (Alternative Military Service Program)}{Feb 2007 -- May 2009}
       \resumeItemListStart
-        \resumeItem{Engineered resistive touchscreens for mobile integration, resulting in 3 patents granted in South Korea
+        \resumeItem{Developed resistive touchscreens for mobile devices, resulting in 3 patents granted in South Korea
         % \\ (Application Numbers: 10-2008-0070246, 10-2008-0056270, 10-2007-0113098)
         }
       \resumeItemListEnd
