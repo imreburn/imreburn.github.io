@@ -94,6 +94,14 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSkill}[4]{
+  \vspace{-2pt}
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}l}
+       \small#1 & \small#2 \\
+      \small#3 & \small#4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 % \newcommand{\resumeSubSubheading}[2]{
 %     \item
 %     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -128,7 +136,7 @@
 %----------HEADING----------
 \begin{table}[]
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-\multirow{3}{*}{\textbf{\huge Jinhong ``Jin'' Choi}} & \faEnvelope~\href{mailto:jinhong.choi@gmail.com}{jinhong.choi@gmail.com} \\
+\multirow{3}{*}{\textbf{\huge Jinhong (Jin) Choi}} & \faEnvelope~\href{mailto:jinhong.choi@gmail.com}{jinhong.choi@gmail.com} \\
                                       & \faMobile~+1-617-803-3057       \\
                                       & \faLinkedin~\href{https://linkedin.com/in/jinhongchoi-osu}{jinhongchoi-osu}    
 \end{tabular*}
@@ -142,33 +150,16 @@
 % \begin{adjustbox}{minipage=.97\textwidth, center}
 %     {\small Highly motivated Software Engineer for Robots and Air/Ground Vehicles with a multidisciplinary background in computer science and mechanical engineering. Over 3 years of research experience with drones and 3 years of professional experience in the automotive industry. Passionate about building secure and safe cyber-physical systems.}
 % \end{adjustbox}
-{\normalsize Highly motivated Software Engineer for Robots and Air/Ground Vehicles with a multidisciplinary background in computer science and mechanical engineering. Over 3 years of research experience with drones and 3 years of professional experience in the automotive industry. Passionate about building secure and safe cyber-physical systems.}
-\vspace{-1.5em}
+{\normalsize Software Engineer for autonomous cyber-physical systems~(CPS)---robots and aerial/ground vehicles---with a multidisciplinary background in computer science and mechanical engineering. Over 3 years of research experience with drones and 3 years of professional experience in the automotive industry. Passionate about building secure and safe autonomous CPS.}
+\vspace{-0.5em}
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
- \resumeSubHeadingListStart
-  \resumeSubItem{
-    \textbf{Programming Languages}{: C, C++, Python, Julia, Haskell, Rust}
-    \hfill
-    \textbf{Languages}{: English (fluent), Korean (native)}
-  }
-  \resumeSubItem{
-    \textbf{Technologies}{: Git, FreeRTOS, ROS, Intel SGX, RemoteID, Sensor fusion, Kalman filter}
-    \hfill
-  }
- \resumeSubHeadingListEnd
- 
-% \small{\item{
-%   \textbf{Programming Languages}{~~~C, C++, Python, Julia, Haskell, Shell script, Assembly (AT\&T), MATLAB} \\
-%   \textbf{Platforms \& Tools}{~~~Git, VS Code, GDB, Vim, AutoCAD, FreeRTOS, Make, Protocol Buffers, ROS, Intel SGX}\\
-%   \textbf{Protocols}{~~~CAN, LIN, RemoteID}\\
-%   \textbf{Languages}{~~~English, Korean}
-% }}
+    \resumeSkill{\textbf{Programming Languages}{: C, C++, Python, MATLAB, Julia, Haskell}}{\textbf{Languages}{: English (fluent), Korean (native)}}{\textbf{Tools and Platforms}{: Git, FreeRTOS, ROS, NumPy}}{\textbf{Robotics}{: Sensor Fusion, Kalman filter}}
 
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
-  \resumeSubItem{\textbf{Phryctoria}: Implemented and demonstrated \textit{Phryctoria}, a decentralized runtime monitoring algorithm for real-time global predicate detection, on a swarm of resource-constrained drones in a real-world setting.~\href{https://youtube.com/shorts/KvSG24Fz8bg?feature=share}{\underline{Demo}}}
+  \resumeSubItem{\textbf{Phryctoria}: Implemented and demonstrated a decentralized runtime monitoring algorithm for real-time global predicate detection, on a swarm of resource-constrained drones in a real-world setting.~\href{https://youtube.com/shorts/KvSG24Fz8bg?feature=share}{\underline{Demo}}}
   % https://youtube.com/shorts/KvSG24Fz8bg?feature=share
   \resumeSubItem{\textbf{OUT-HERD}~\cite{patil2024outherd}: Implemented and experimentally validated a drone-herding algorithm on real drones, which exploits RemoteID and the target’s collision-avoidance systems for safe takeover and redirection.~\href{https://youtube.com/shorts/WAU-Fw27_nQ?feature=share}{\underline{Demo}}}
   % https://youtube.com/shorts/WAU-Fw27_nQ?feature=share
@@ -178,7 +169,6 @@
 %-----------EXPERIENCE-----------
 \section{Work Experience}
   \resumeSubHeadingListStart
-    
     \resumeSubheading
       {Oregon State University}{Corvallis, OR}
       {Research and Teaching Assistant}{Jun 2020 -- Jun 2024}
@@ -262,4 +252,3 @@
 %-------------------------------------------
 
 \end{document}
-
